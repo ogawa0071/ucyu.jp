@@ -195,16 +195,14 @@ export default function Home() {
                 </Card.Body>
                 <ListGroup variant="flush">
                   {Object.entries(result.text).map(
-                    (
-                      [textKey, textValue]: [string, ColorName[]],
-                      textKeyValueIndex
-                    ) => (
+                    ([textKey, textValue], textKeyValueIndex) => (
                       <ListGroup.Item key={textKeyValueIndex}>
                         <span className="mr-2">{textKey}:</span>
                         {textValue.map((colorName, colorNameIndex) => (
                           <Badge
                             className={`mx-1 border ${
-                              colorName.color === "#ffffff"
+                              colorName.color === "#ffffff" ||
+                              colorName.color === "#ffff00"
                                 ? "text-dark"
                                 : "text-light"
                             }`}
