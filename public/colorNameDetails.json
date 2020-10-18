@@ -1,0 +1,240 @@
+{
+  "green": {
+    "name": "木",
+    "color": "#00b050",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ブラウン", "color": "#996633" }
+      ],
+      "ラッキーカラー": [
+        { "name": "ゴールド", "color": "" },
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" }
+      ],
+      "お友達カラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ],
+      "NGカラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ]
+    }
+  },
+  "aqua": {
+    "name": "木",
+    "color": "#00b0f0",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ブラウン", "color": "#996633" }
+      ],
+      "ラッキーカラー": [
+        { "name": "ゴールド", "color": "" },
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" }
+      ],
+      "お友達カラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ],
+      "NGカラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ]
+    }
+  },
+  "red": {
+    "name": "火",
+    "color": "#ff0000",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ],
+      "ラッキーカラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ],
+      "お友達カラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ],
+      "NGカラー": [
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" }
+      ]
+    }
+  },
+  "purple": {
+    "name": "火",
+    "color": "#cc0099",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ],
+      "ラッキーカラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ],
+      "お友達カラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ],
+      "NGカラー": [
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" }
+      ]
+    }
+  },
+  "olive": {
+    "name": "土",
+    "color": "#996633",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" }
+      ],
+      "ラッキーカラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ],
+      "お友達カラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ブラウン", "color": "#996633" },
+        { "name": "ゴールド", "color": "" }
+      ],
+      "NGカラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ]
+    }
+  },
+  "yellow": {
+    "name": "土",
+    "color": "#ffff00",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" }
+      ],
+      "ラッキーカラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ],
+      "お友達カラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ブラウン", "color": "#996633" },
+        { "name": "ゴールド", "color": "" }
+      ],
+      "NGカラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ]
+    }
+  },
+  "gray": {
+    "name": "金",
+    "color": "#bfbfbf",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ],
+      "ラッキーカラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ゴールド", "color": "" },
+        { "name": "ブラウン", "color": "#996633" }
+      ],
+      "お友達カラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ],
+      "NGカラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ]
+    }
+  },
+  "white": {
+    "name": "金",
+    "color": "#808080",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "ブルー", "color": "#6600ff" },
+        { "name": "グリーン", "color": "#00b050" }
+      ],
+      "ラッキーカラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ゴールド", "color": "" },
+        { "name": "ブラウン", "color": "#996633" }
+      ],
+      "お友達カラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ],
+      "NGカラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ]
+    }
+  },
+  "navy": {
+    "name": "水",
+    "color": "#203764",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ],
+      "ラッキーカラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ],
+      "お友達カラー": [
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" },
+        { "name": "パープル（青系）", "color": "" }
+      ],
+      "NGカラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ブラウン", "color": "#996633" }
+      ]
+    }
+  },
+  "blue": {
+    "name": "水",
+    "color": "#6600ff",
+    "link": "https://ucyu.shop-pro.jp/",
+    "text": {
+      "コントロールカラー": [
+        { "name": "レッド", "color": "#ff0000" },
+        { "name": "ピンク", "color": "#cc0099" }
+      ],
+      "ラッキーカラー": [
+        { "name": "ホワイト", "color": "#ffffff" },
+        { "name": "シルバー", "color": "#bfbfbf" }
+      ],
+      "お友達カラー": [
+        { "name": "ブラック", "color": "#000000" },
+        { "name": "ネイビー", "color": "#203764" },
+        { "name": "パープル（青系）", "color": "" }
+      ],
+      "NGカラー": [
+        { "name": "イエロー", "color": "#ffff00" },
+        { "name": "ブラウン", "color": "#996633" }
+      ]
+    }
+  }
+}

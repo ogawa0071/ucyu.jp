@@ -1,42 +1,217 @@
 import Head from "next/head";
-import { ChangeEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  Form,
+  Button,
+  Card,
+  ListGroup,
+  Badge,
+} from "react-bootstrap";
+
+interface DateColor {
+  [key: string]: string;
+}
+
+interface ColorName {
+  name: string;
+  color: string;
+}
+
+interface ColorNameDetail extends ColorName {
+  link: string;
+  text: {
+    [key: string]: ColorName[];
+  };
+}
+
+interface ColorNameDetails {
+  [key: string]: ColorNameDetail;
+}
 
 export default function Home() {
-  const [sourceJson, setSourceJson] = useState<{ [key: string]: string }>();
-  const [date, setDate] = useState<string>("");
-  const [result, setResult] = useState<string>();
+  const [dateColor, setDateColor] = useState<DateColor>();
+  const [colorNameDetails, setColorNameDetails] = useState<ColorNameDetails>();
+  const [year, setYear] = useState<string>("1950");
+  const [month, setMonth] = useState<string>("01");
+  const [day, setDay] = useState<string>("01");
+  const [result, setResult] = useState<ColorNameDetail>();
 
   useEffect(() => {
     (async () => {
-      setSourceJson(await (await fetch("/source.json")).json());
+      const _dateColor = await (await fetch("/dateColor.json")).json();
+      setDateColor(_dateColor);
+
+      const _colorNameDetails = await (
+        await fetch("/colorNameDetails.json")
+      ).json();
+      setColorNameDetails(_colorNameDetails);
     })();
   }, []);
 
   function checkResult() {
-    setResult(sourceJson[date]);
+    const date = `${year}-${month}-${day}`;
+    const color = dateColor[date];
+    const colorNameDetail = colorNameDetails[color];
+    setResult(colorNameDetail);
   }
 
   return (
-    <div>
+    <>
       <Head>
-        <title>Create Next App</title>
+        <title>陰陽五行論に基づいた生年月日という小宇宙の神秘</title>
       </Head>
 
-      <div>
-        <input
-          type="date"
-          min="1950-01-01"
-          max="2005-12-31"
-          required
-          value={date}
-          onChange={(event: ChangeEvent<HTMLInputElement>) => {
-            setDate(event.target.value);
-          }}
-        />
-        <button onClick={checkResult}>Check</button>
-      </div>
+      <Container>
+        <Row className="text-center my-5">
+          <Col>
+            <h1 className="font-weight-bold">お財布ラッキーカラー鑑定</h1>
+            <h2 className="font-weight-bold h4">
+              陰陽五行論に基づいた生年月日という小宇宙の神秘
+            </h2>
+          </Col>
+        </Row>
 
-      {result && <div>Result: {result}</div>}
-    </div>
+        <Row className="text-center my-5">
+          <Col>
+            <Form>
+              <Form.Row>
+                <Col>
+                  <Form.Control
+                    as="select"
+                    custom
+                    size="lg"
+                    required
+                    value={year}
+                    onChange={(event) => {
+                      setYear(event.target.value);
+                    }}
+                  >
+                    {[...Array(56)].map((_, index) => (
+                      <option key={index}>{1950 + index}</option>
+                    ))}
+                  </Form.Control>
+                </Col>
+                <Col>
+                  <Form.Control
+                    as="select"
+                    custom
+                    size="lg"
+                    required
+                    value={month}
+                    onChange={(event) => {
+                      setMonth(event.target.value);
+                    }}
+                  >
+                    {[...Array(12)].map((_, index) => (
+                      <option key={index}>
+                        {(1 + index).toString().padStart(2, "0")}
+                      </option>
+                    ))}
+                  </Form.Control>
+                </Col>
+                <Col>
+                  <Form.Control
+                    as="select"
+                    custom
+                    size="lg"
+                    required
+                    value={day}
+                    onChange={(event) => {
+                      setDay(event.target.value);
+                    }}
+                  >
+                    {[...Array(31)].map((_, index) => (
+                      <option key={index}>
+                        {(1 + index).toString().padStart(2, "0")}
+                      </option>
+                    ))}
+                  </Form.Control>
+                </Col>
+                <Col xs={12} md="auto" className="py-2 py-md-0">
+                  <Button
+                    variant="primary"
+                    type="button"
+                    size="lg"
+                    block
+                    onClick={checkResult}
+                  >
+                    鑑定する
+                  </Button>
+                </Col>
+              </Form.Row>
+            </Form>
+          </Col>
+        </Row>
+
+        {result && (
+          <Row>
+            <Col>
+              <Card>
+                <Card.Body>
+                  <Card.Title
+                    className="font-weight-bold"
+                    style={{ color: result.color }}
+                  >
+                    {result.name}
+                  </Card.Title>
+                  <Card.Subtitle className="font-weight-bold">
+                    あなたのカラー
+                  </Card.Subtitle>
+                </Card.Body>
+                <ListGroup variant="flush">
+                  {Object.entries(result.text).map(
+                    (
+                      [textKey, textValue]: [string, ColorName[]],
+                      textKeyValueIndex
+                    ) => (
+                      <ListGroup.Item key={textKeyValueIndex}>
+                        <span className="mr-2">{textKey}:</span>
+                        {textValue.map((colorName, colorNameIndex) => (
+                          <Badge
+                            className={`mx-1 border ${
+                              colorName.color === "#ffffff"
+                                ? "text-dark"
+                                : "text-light"
+                            }`}
+                            key={colorNameIndex}
+                            style={{
+                              backgroundColor: colorName.color,
+                            }}
+                          >
+                            {colorName.name}
+                          </Badge>
+                        ))}
+                      </ListGroup.Item>
+                    )
+                  )}
+                </ListGroup>
+                <Card.Body>
+                  <Button
+                    href={result.link}
+                    variant="secondary"
+                    block
+                    target="_blank"
+                  >
+                    ショップをみる
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        )}
+      </Container>
+
+      <Container>
+        <Row className="text-center my-5">
+          <Col>
+            <Image src="/pop1.png" fluid></Image>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
