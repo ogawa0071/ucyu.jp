@@ -39,6 +39,7 @@ export default function Home() {
   const [month, setMonth] = useState<string>("01");
   const [day, setDay] = useState<string>("01");
   const [result, setResult] = useState<ColorNameDetail>();
+  const [validateInvalid, setValidateInvalid] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -51,6 +52,24 @@ export default function Home() {
       setColorNameDetails(_colorNameDetails);
     })();
   }, []);
+
+  useEffect(() => {
+    const yearN = Number(year);
+    const monthN = Number(month);
+    const dayN = Number(day);
+
+    const date = new Date(yearN, monthN - 1, dayN);
+
+    if (
+      yearN === date.getFullYear() &&
+      monthN === date.getMonth() + 1 &&
+      dayN === date.getDate()
+    ) {
+      setValidateInvalid(false);
+    } else {
+      setValidateInvalid(true);
+    }
+  }, [year, month, day]);
 
   function checkResult() {
     const date = `${year}-${month}-${day}`;
@@ -95,6 +114,7 @@ export default function Home() {
                     ))}
                   </Form.Control>
                 </Col>
+
                 <Col>
                   <Form.Control
                     as="select"
@@ -113,6 +133,7 @@ export default function Home() {
                     ))}
                   </Form.Control>
                 </Col>
+
                 <Col>
                   <Form.Control
                     as="select"
@@ -131,6 +152,7 @@ export default function Home() {
                     ))}
                   </Form.Control>
                 </Col>
+
                 <Col xs={12} md="auto" className="py-2 py-md-0">
                   <Button
                     variant="primary"
@@ -138,10 +160,19 @@ export default function Home() {
                     size="lg"
                     block
                     onClick={checkResult}
+                    disabled={validateInvalid}
                   >
                     鑑定する
                   </Button>
                 </Col>
+
+                {validateInvalid && (
+                  <Col xs={12} className="text-md-left">
+                    <Form.Control.Feedback type="invalid" className="d-block">
+                      日付が存在しません
+                    </Form.Control.Feedback>
+                  </Col>
+                )}
               </Form.Row>
             </Form>
           </Col>
