@@ -2,7 +2,7 @@
   "green": {
     "name": "木",
     "color": "#00b050",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469710",
     "text": {
       "コントロールカラー": [
         { "name": "ブラウン", "color": "#996633" },
@@ -25,7 +25,7 @@
   "aqua": {
     "name": "木",
     "color": "#00b0f0",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469710",
     "text": {
       "コントロールカラー": [
         { "name": "ブラウン", "color": "#996633" },
@@ -48,7 +48,7 @@
   "red": {
     "name": "火",
     "color": "#ff0000",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469752",
     "text": {
       "コントロールカラー": [
         { "name": "シルバー", "color": "#bfbfbf" },
@@ -71,7 +71,7 @@
   "purple": {
     "name": "火",
     "color": "#cc0099",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469752",
     "text": {
       "コントロールカラー": [
         { "name": "シルバー", "color": "#bfbfbf" },
@@ -94,7 +94,7 @@
   "olive": {
     "name": "土",
     "color": "#996633",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469754",
     "text": {
       "コントロールカラー": [
         { "name": "ブラック", "color": "#203764" },
@@ -117,7 +117,7 @@
   "yellow": {
     "name": "土",
     "color": "#ffff00",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469754",
     "text": {
       "コントロールカラー": [
         { "name": "ブラック", "color": "#203764" },
@@ -140,7 +140,7 @@
   "gray": {
     "name": "金",
     "color": "#bfbfbf",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469756",
     "text": {
       "コントロールカラー": [
         { "name": "グリーン", "color": "#00b050" },
@@ -163,7 +163,7 @@
   "white": {
     "name": "金",
     "color": "#808080",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469756",
     "text": {
       "コントロールカラー": [
         { "name": "グリーン", "color": "#00b050" },
@@ -186,7 +186,7 @@
   "navy": {
     "name": "水",
     "color": "#203764",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469760",
     "text": {
       "コントロールカラー": [
         { "name": "レッド", "color": "#ff0000" },
@@ -209,7 +209,7 @@
   "blue": {
     "name": "水",
     "color": "#6600ff",
-    "link": "https://ucyu.shop-pro.jp/",
+    "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469760",
     "text": {
       "コントロールカラー": [
         { "name": "レッド", "color": "#ff0000" },
