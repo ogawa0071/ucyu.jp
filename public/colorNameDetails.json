@@ -1,6 +1,6 @@
 {
   "green": {
-    "name": "木",
+    "name": "木+",
     "color": "#00b050",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469710",
     "text": {
@@ -23,7 +23,7 @@
     }
   },
   "aqua": {
-    "name": "木",
+    "name": "木-",
     "color": "#00b0f0",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469710",
     "text": {
@@ -46,7 +46,7 @@
     }
   },
   "red": {
-    "name": "火",
+    "name": "火+",
     "color": "#ff0000",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469752",
     "text": {
@@ -69,7 +69,7 @@
     }
   },
   "purple": {
-    "name": "火",
+    "name": "火-",
     "color": "#cc0099",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469752",
     "text": {
@@ -92,7 +92,7 @@
     }
   },
   "olive": {
-    "name": "土",
+    "name": "土+",
     "color": "#996633",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469754",
     "text": {
@@ -115,7 +115,7 @@
     }
   },
   "yellow": {
-    "name": "土",
+    "name": "土-",
     "color": "#ffff00",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469754",
     "text": {
@@ -138,7 +138,7 @@
     }
   },
   "gray": {
-    "name": "金",
+    "name": "金+",
     "color": "#bfbfbf",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469756",
     "text": {
@@ -161,7 +161,7 @@
     }
   },
   "white": {
-    "name": "金",
+    "name": "金-",
     "color": "#808080",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469756",
     "text": {
@@ -184,7 +184,7 @@
     }
   },
   "navy": {
-    "name": "水",
+    "name": "水+",
     "color": "#203764",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469760",
     "text": {
@@ -207,7 +207,7 @@
     }
   },
   "blue": {
-    "name": "水",
+    "name": "水-",
     "color": "#6600ff",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469760",
     "text": {
