@@ -237,12 +237,19 @@ export default function Home() {
       <Container>
         <Row className="text-center my-5">
           <Col>
-            <Image
-              src="/pop1.png"
-              width="679"
-              height="960"
-              className="rounded"
-            ></Image>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Image
+                src="/pop1.png"
+                width="679"
+                height="960"
+                className="rounded"
+              ></Image>
+            </div>
           </Col>
         </Row>
       </Container>
