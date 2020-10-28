@@ -4,13 +4,13 @@ import {
   Container,
   Row,
   Col,
-  Image,
   Form,
   Button,
   Card,
   ListGroup,
   Badge,
 } from "react-bootstrap";
+import Image from "next/image";
 
 interface DateColor {
   [key: string]: string;
@@ -237,7 +237,12 @@ export default function Home() {
       <Container>
         <Row className="text-center my-5">
           <Col>
-            <Image src="/pop1.png" fluid></Image>
+            <Image
+              src="/pop1.png"
+              width="679"
+              height="960"
+              className="fluid"
+            ></Image>
           </Col>
         </Row>
       </Container>
