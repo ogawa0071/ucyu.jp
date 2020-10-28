@@ -241,7 +241,7 @@ export default function Home() {
               src="/pop1.png"
               width="679"
               height="960"
-              className="fluid"
+              className="rounded"
             ></Image>
           </Col>
         </Row>
