@@ -1,8 +1,10 @@
 {
   "green": {
     "name": "木+",
-    "color": "#00b050",
+    "color": "#00736d",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469710",
+    "description": "まっすぐに天に貫く樹木のように自分軸を持つ人です。\n平和主義でマイペース、独立心が強いので自営業タイプ。",
+    "image": "/green.png",
     "text": {
       "コントロールカラー": [
         { "name": "ブラウン", "color": "#996633" },
@@ -24,8 +26,10 @@
   },
   "aqua": {
     "name": "木-",
-    "color": "#00b0f0",
+    "color": "#00759c",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469710",
+    "description": "花のように芯の強さとやさしさを持つ人です。\n柔軟性があり社交上手、グループ作りが得意な実業家タイプ。",
+    "image": "/aqua.png",
     "text": {
       "コントロールカラー": [
         { "name": "ブラウン", "color": "#996633" },
@@ -47,8 +51,10 @@
   },
   "red": {
     "name": "火+",
-    "color": "#ff0000",
+    "color": "#941919",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469752",
+    "description": "太陽のようにおおらかで自然体、周囲を明るく照らす人です。\n子供のような無邪気さがあり食べることが大好きな趣味人タイプ。",
+    "image": "/red.png",
     "text": {
       "コントロールカラー": [
         { "name": "シルバー", "color": "#bfbfbf" },
@@ -70,8 +76,10 @@
   },
   "purple": {
     "name": "火-",
-    "color": "#cc0099",
+    "color": "#d52372",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469752",
+    "description": "火のようなあたたかさと情熱を持つロマンティストです。\n直感力が強く独自の世界を持つ芸術家タイプ。",
+    "image": "/purple.png",
     "text": {
       "コントロールカラー": [
         { "name": "シルバー", "color": "#bfbfbf" },
@@ -93,8 +101,10 @@
   },
   "olive": {
     "name": "土+",
-    "color": "#996633",
+    "color": "#68512e",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469754",
+    "description": "どっしりとした山のような落ち着きとカリスマ性のある人です。\nサービス精神があり面倒見がよく周囲から頼りにされる親分タイプ。",
+    "image": "/olive.png",
     "text": {
       "コントロールカラー": [
         { "name": "ブラック", "color": "#203764" },
@@ -116,8 +126,10 @@
   },
   "yellow": {
     "name": "土-",
-    "color": "#ffff00",
+    "color": "#f9de23",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469754",
+    "description": "植物を育む大地のようにゆったりとした母性と安定感のある人です。\n庶民的で親しみやすく堅実にコツコツ努力する家庭人タイプ。",
+    "image": "/yellow.png",
     "text": {
       "コントロールカラー": [
         { "name": "ブラック", "color": "#203764" },
@@ -139,8 +151,10 @@
   },
   "gray": {
     "name": "金+",
-    "color": "#bfbfbf",
+    "color": "#949494",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469756",
+    "description": "プラチナのような強さと正義感、行動力を持つ人です。\n競争社会には強く、体を動かしているほうが得意なスポーツタイプ。",
+    "image": "/gray.png",
     "text": {
       "コントロールカラー": [
         { "name": "グリーン", "color": "#00b050" },
@@ -162,8 +176,10 @@
   },
   "white": {
     "name": "金-",
-    "color": "#808080",
+    "color": "#ffffff",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469756",
+    "description": "宝石のような気品と美意識の高さがある人です。\nステイタスとミッションとプライド。責任感も強い補佐役タイプ。",
+    "image": "/white.png",
     "text": {
       "コントロールカラー": [
         { "name": "グリーン", "color": "#00b050" },
@@ -185,8 +201,10 @@
   },
   "navy": {
     "name": "水+",
-    "color": "#203764",
+    "color": "#1a176c",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469760",
+    "description": "海のように自由で夢とロマンと冒険心のある人です。\n異文化に惹かれ知的好奇心が旺盛なクリエイタータイプ。",
+    "image": "/navy.png",
     "text": {
       "コントロールカラー": [
         { "name": "レッド", "color": "#ff0000" },
@@ -208,8 +226,10 @@
   },
   "blue": {
     "name": "水-",
-    "color": "#6600ff",
+    "color": "#481599",
     "link": "https://ucyu.shop-pro.jp/?mode=grp&gid=2469760",
+    "description": "雨のような慈愛と母性がありクールで知的な人です。\n古典文化に惹かれ学者や人を育てる教師、良妻賢母タイプ。",
+    "image": "/blue.png",
     "text": {
       "コントロールカラー": [
         { "name": "レッド", "color": "#ff0000" },
