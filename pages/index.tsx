@@ -37,7 +37,7 @@ interface ColorNameDetails {
 }
 
 export default function Home() {
-  const [year, setYear] = useState<string>("1950");
+  const [year, setYear] = useState<string>("1940");
   const [month, setMonth] = useState<string>("01");
   const [day, setDay] = useState<string>("01");
   const [result, setResult] = useState<ColorNameDetail>();
@@ -82,16 +82,12 @@ export default function Home() {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                // width: 100,
-                // marginBottom: 100,
               }}
             >
               <Image
                 src="/header.png"
                 width="100"
                 height={(100 / 860) * 836}
-                // className="rounded"
-                style={{}}
               ></Image>
             </div>
             <h1 className="font-weight-bold">お財布ラッキーカラー鑑定</h1>
@@ -116,8 +112,8 @@ export default function Home() {
                       setYear(event.target.value);
                     }}
                   >
-                    {[...Array(56)].map((_, index) => (
-                      <option key={index}>{1950 + index}</option>
+                    {[...Array(76)].map((_, index) => (
+                      <option key={index}>{1940 + index}</option>
                     ))}
                   </Form.Control>
                 </Col>
