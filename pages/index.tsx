@@ -11,6 +11,8 @@ import {
   Badge,
 } from "react-bootstrap";
 import Image from "next/image";
+import dateColor from "../public/dateColor.json";
+import colorNameDetails from "../public/colorNameDetails.json";
 
 interface DateColor {
   [key: string]: string;
@@ -23,6 +25,8 @@ interface ColorName {
 
 interface ColorNameDetail extends ColorName {
   link: string;
+  description: string;
+  image: string;
   text: {
     [key: string]: ColorName[];
   };
@@ -33,25 +37,11 @@ interface ColorNameDetails {
 }
 
 export default function Home() {
-  const [dateColor, setDateColor] = useState<DateColor>();
-  const [colorNameDetails, setColorNameDetails] = useState<ColorNameDetails>();
   const [year, setYear] = useState<string>("1950");
   const [month, setMonth] = useState<string>("01");
   const [day, setDay] = useState<string>("01");
   const [result, setResult] = useState<ColorNameDetail>();
   const [validateInvalid, setValidateInvalid] = useState(false);
-
-  useEffect(() => {
-    (async () => {
-      const _dateColor = await (await fetch("/dateColor.json")).json();
-      setDateColor(_dateColor);
-
-      const _colorNameDetails = await (
-        await fetch("/colorNameDetails.json")
-      ).json();
-      setColorNameDetails(_colorNameDetails);
-    })();
-  }, []);
 
   useEffect(() => {
     const yearN = Number(year);
@@ -81,12 +71,29 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>陰陽五行論に基づいた生年月日という小宇宙の神秘</title>
+        <title>お財布ラッキーカラー鑑定</title>
       </Head>
 
       <Container>
         <Row className="text-center my-5">
           <Col>
+            <div
+              className="mb-5"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                // width: 100,
+                // marginBottom: 100,
+              }}
+            >
+              <Image
+                src="/header.png"
+                width="100"
+                height={(100 / 860) * 836}
+                // className="rounded"
+                style={{}}
+              ></Image>
+            </div>
             <h1 className="font-weight-bold">お財布ラッキーカラー鑑定</h1>
             <h2 className="font-weight-bold h4">
               陰陽五行論に基づいた生年月日という小宇宙の神秘
@@ -179,18 +186,16 @@ export default function Home() {
         </Row>
 
         {result && (
-          <Row>
+          <Row className="my-5">
             <Col>
               <Card>
+                <Card.Img variant="top" src={result.image} />
                 <Card.Body>
-                  <Card.Title
+                  <Card.Subtitle
                     className="font-weight-bold"
-                    style={{ color: result.color }}
+                    style={{ whiteSpace: "pre-line" }}
                   >
-                    {result.name}
-                  </Card.Title>
-                  <Card.Subtitle className="font-weight-bold">
-                    あなたのカラー
+                    {result.description}
                   </Card.Subtitle>
                 </Card.Body>
                 <ListGroup variant="flush">
@@ -225,33 +230,13 @@ export default function Home() {
                     block
                     target="_blank"
                   >
-                    ショップをみる
+                    {result.name} の方にぴったりのお財布の色はこちら
                   </Button>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
         )}
-      </Container>
-
-      <Container>
-        <Row className="text-center my-5">
-          <Col>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Image
-                src="/pop1.png"
-                width="679"
-                height="960"
-                className="rounded"
-              ></Image>
-            </div>
-          </Col>
-        </Row>
       </Container>
     </>
   );
